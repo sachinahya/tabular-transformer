@@ -1,2 +1,3 @@
 # tabular-transformer
-Tools for reading and parsing tabular data.
+
+Decorators and utilities for reading and parsing tabular data.
