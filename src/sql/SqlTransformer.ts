@@ -1,3 +1,4 @@
+import { Newable } from '../helpers/types';
 import MetadataEntity from '../metadata/MetadataEntity';
 import TabularDataTransformer from '../transformer/TabularDataTransformer';
 import SqlMetadataStorage from './SqlMetadataStorage';

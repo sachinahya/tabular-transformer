@@ -1,3 +1,4 @@
+import { Newable } from '../helpers/types';
 import MetadataEntity from '../metadata/MetadataEntity';
 import TabularDataTransformer from '../transformer/TabularDataTransformer';
 import ExcelMetadataStorage from './ExcelMetadataStorage';
@@ -65,7 +66,7 @@ export default class ExcelTransformer<TClassType> implements TabularDataTransfor
 
   private getParseOptions() {
     const range = this.sheet.decodedRange;
-    const useRowHeadings = this.metadata.options.columnIdType === ColumnIdType.RowHeadings;
+    const useRowHeadings = this.metadata.options?.columnIdType === ColumnIdType.RowHeadings;
     return { range, useRowHeadings };
   }
 }

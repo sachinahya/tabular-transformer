@@ -6,7 +6,7 @@ export default class MetadataEntity<TEntityOptions = unknown, TPropertyOptions =
     return this._propertyMetadata;
   }
 
-  options: TEntityOptions;
+  options?: TEntityOptions;
 
   readonly propertySetter: PropertySetter;
 
